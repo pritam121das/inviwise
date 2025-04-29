@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INVIWISE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<style>
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(26, 54, 93, 0.2) 100%);
+    }
+    .progress-bar {
+      height: 15px;
+      border-radius: 7.5px;
+    }
+
+    @keyframes slide-in {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 1s ease-out forwards;
+}
+@keyframes fade-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide {
+  animation: fade-slide 1s ease-out forwards ;
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-slide-in-left {
+  animation: slide-in-left 1s ease-out forwards;
+}
+.animate-slide-in-right {
+  animation: slide-in-right 1s ease-out forwards;
+}
+</style>
+
+  </style>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50 p-1" style="padding-left: 30px; padding-right: 30px;">
+    <div class="container mx-auto flex justify-between items-center p-2">
+      <div class="font-bold text-xl">
+        <div class="logo" style="display: flex; gap: 6px;">
+          <img src="./alllogo/inviwise.jpg" alt="Logo Icon" style="height: 24px;" />
+          <h1 style="font-size: 16px; cursor: pointer;">
+            <span class="text-xl font-bold text-green-600">INVIWISE</span>
+          </h1>
+        </div>
+      </div>
+      <nav class="hidden md:flex space-x-10 text-gray-1000 text-sm">
+        <a href="#" class="hover:text-green-1000 transform hover:scale-105 transition duration-200" style="font-size: 20px;">Home</a>
+        <a href="#" class="hover:text-green-1000 transform hover:scale-105 transition duration-200" style="font-size: 20px" >Products</a>
+        <a href="#" class="hover:text-green-1000 transform hover:scale-105 transition duration-200"style="font-size: 20px">About Us</a>
+        <a href="#" class="hover:text-green-1000 transform hover:scale-105 transition duration-200"style="font-size: 20px">Contact</a>
+      </nav>
+      <div>
+        <button class="bg-green-500 text-white px-3 py-2 text-sm rounded transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-md">
+          MoneyGrad
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section  id = "home" class=" animate-slide-in delay-[500ms] bg-gradient-to-r from-green-50 to-green-100 py-20 px-8 text-center md:text-left md:flex md:items-center md:justify-between">
+    <div class="max-w-xl">
+      <h1 class="text-4xl font-bold mb-4">Invest Wisely In Happiness</h1>
+      <p class="text-lg mb-6">Empower your financial journey with data-driven insights and modern investment tools.
+        Grow your wealth, cultivate your happiness. Inviwise empowers you to invest wisely in the experiences, passions, and comforts that bring you joy – from that special purchase to securing your peace of mind.
+      </p>
+      <ul class="space-y-4 bg-blue-50 p-6 rounded-xl max-w-md">
+        <li class="flex items-start space-x-3">
+          <span class="text-purple-500 text-xl">✔️</span>
+          <span class="font-semibold text-gray-800">Define Your Happy Place</span>
+        </li>
+        <li class="flex items-start space-x-3">
+          <span class="text-purple-500 text-xl">✔️</span>
+          <span class="font-semibold text-gray-800">Smartly Plan Your Finances</span>
+        </li>
+        <li class="flex items-start space-x-3">
+          <span class="text-purple-500 text-xl">✔️</span>
+          <span class="font-semibold text-gray-800">Budget for What Matters</span>
+        </li>
+        <li class="flex items-start space-x-3">
+          <span class="text-purple-500 text-xl">✔️</span>
+          <span class="font-semibold text-gray-800">Unlock Your Joyful Future. Invest Wisely, Live Fully.</span>
+        </li>
+      </ul>
+      
+      <!-- <div class="space-x-4">
+        <button class="bg-green-600 text-white px-6 py-2 rounded-xl">Get Started</button>
+        <button class="border border-green-600 text-green-600 px-6 py-2 rounded-xl">Learn More</button>
+      </div> -->
+      <div>
+        <div>
+            <button class="bg-blue-500 text-white px-6 py-3 rounded-lg font-medium text-lg 
+            transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-600 hover:shadow-lg
+            opacity-0 animate-slide-in delay-[500ms]" style="margin-left: 30px; ">
+           <span style="margin-left: 15px";><a href="#moneygrad">Get Started with MoneyGrad</a></span> 
+          </button>
+      </div>
+      </div>
+    </div>
+    <div class="mt-10 md:mt-0">
+      <img src="https://multipurposethemes.com/wp-content/uploads/2024/09/Fox-Bootstrap-Admin-Dashboard-Template.jpg"  alt="Dashboard Illustration" class="rounded-xl shadow-lg" style="width: 600px;"/>
+    </div>
+  </section>
+
+  <!-- Product Highlight: MONEYGRAD -->
+  <section  id ="moneygrad" class="py-16 px-8 bg-white">
+  <h2 class="text-3xl font-bold mb-6 text-center">Introducing MONEYGRAD</h2>
+  <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left: Image -->
+    <div class="animate-slide-in-left delay-[200ms]">
+      <img src="https://cdn.vectorstock.com/i/500p/71/91/business-graph-growth-progress-blue-arrow-vector-1767191.jpg" alt="Graph" class="rounded-lg shadow" />
+    </div>
+    
+    <!-- Right: Text -->
+    <div class="animate-slide-in-right delay-[400ms]">
+      <ul class="space-y-4 bg-green-50 p-6 rounded-xl max-w-md">
+        <p class="mb-4">
+          MoneyGrad is Coming Soon! 👋 Get ready to effortlessly manage your financial wealth with our intuitive mobile app. Plan your future, track your progress, and achieve your financial goals with ease.
+        </p>
+
+        <div class="w-full bg-gray-200 rounded-full h-4 mb-4">
+          <div class="bg-green-600 h-4 rounded-full" style="width: 70%;"></div>
+        </div>
+
+        <li class="flex items-start space-x-3">
+          <span class="text-green-500 text-xl">✔️</span>
+          <span class="font-semibold text-gray-800">Stay Tuned for MoneyGrad: Your investment growth is on track (70%)</span>
+        </li>
+        <li class="flex items-start space-x-3">
+          <span class="text-green-500 text-xl">✔️</span>
+          <span class="font-semibold text-gray-800">Simple Wealth Management, Coming to Your Pocket</span>
+        </li>
+        <li class="flex items-start space-x-3">
+          <span class="text-green-500 text-xl">✔️</span>
+          <span class="font-semibold text-gray-800">Plan Your Financial Future, Effortlessly</span>
+        </li>
+        <li class="flex items-start space-x-3">
+          <span class="text-green-500 text-xl">✔️</span>
+          <span class="font-semibold text-gray-800">Track Your Growth, On the Go</span>
+        </li>
+        <li class="flex items-start space-x-3">
+          <span class="text-green-500 text-xl">✔️</span>
+          <span class="font-semibold text-gray-800">Your Journey to Financial Confidence Starts Here.</span>
+        </li>
+      </ul>
+      <div class="flex flex-wrap gap-4 mt-6">
+  <!-- Google Play -->
+  <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+         alt="Get it on Google Play" class="h-12">
+  </a>
+
+  <!-- App Store -->
+  <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+         alt="Download on the App Store" class="h-12">
+  </a>
+</div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- Why Choose INVIWISE -->
+  <section class="bg-green-50 py-16 px-8">
+    <h2 class="text-3xl font-bold mb-12 text-center">Why Choose INVIWISE</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <div class="text-green-600 text-3xl mb-4">🔒</div>
+        <h3 class="font-semibold text-xl mb-2">Security First</h3>
+        <p class="text-gray-600">Your data and assets are protected with top-grade encryption.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <div class="text-green-600 text-3xl mb-4">📊</div>
+        <h3 class="font-semibold text-xl mb-2">Data-Driven Insights</h3>
+        <p class="text-gray-600">Leverage analytics to make smarter financial decisions.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow">
+        <div class="text-green-600 text-3xl mb-4">🚀</div>
+        <h3 class="font-semibold text-xl mb-2">Future-Ready</h3>
+        <p class="text-gray-600">Stay ahead with our AI-powered forecasting tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Ads Banner -->
+  <section class="py-10 px-8 bg-white text-center">
+    <div class="bg-green-100 rounded-xl p-6 max-w-4xl mx-auto shadow-md">
+      <h3 class="text-xl font-semibold mb-2">We're a proud Google Ads Partner</h3>
+      <p>Reach more users with smarter marketing campaigns.</p>
+    </div>
+  </section>
+
+  <!-- Chatbot Interface -->
+  <footer class="fixed bottom-4 right-4">
+    <button class="bg-green-600 text-white px-4 py-3 rounded-full shadow-lg">
+      💬 Chat with us
+    </button>
+  </footer>
+<!-- Footer -->
+<footer style="background-color:#161817; color: white; padding: 60px 100px 40px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+      
+      <!-- Brand & Description -->
+      <div style="max-width: 300px;">
+        <h2 style="font-size: 28px; font-weight: 700; margin: 0;">INVI<span style="color:#63b3ed;">WISE</span></h2>
+        <p style="margin-top: 20px; color: #a0aec0; font-size: 16px;">
+          Invest Wisely In Happiness. Your trusted partner for financial growth and security.
+        </p>
+      </div>
+  
+      <!-- Links: Products -->
+      <div>
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 10px;">Products</h3>
+        <p style="color: #a0aec0; margin: 6px 0;">MONEYGRAD - coming soon</p>
+      </div>
+  
+      <!-- Links: Company -->
+      <div>
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 10px;">Company</h3>
+        <p style="color: #a0aec0; margin: 6px 0;">About Us</p>
+        <p style="color: #a0aec0; margin: 6px 0;">Contact</p>
+      </div>
+  
+      <!-- Links: Resources -->
+      <div>
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 10px;">Resources</h3>
+        <p style="color: #a0aec0; margin: 6px 0;">FAQ</p>
+        <p style="color: #a0aec0; margin: 6px 0;">Support</p>
+      </div>
+  
+      <!-- Social Icons -->
+      <div>
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 10px;">Connect With Us</h3>
+        <div style="display: flex; gap: 12px; margin-top: 12px;">
+          <div style="background:#63b3ed; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px;">in</div>
+          <div style="background:#63b3ed; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px;">f</div>
+          <div style="background:#63b3ed; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px;">tw</div>
+          <div style="background:#63b3ed; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px;">ig</div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Divider -->
+    <div style="border-top: 1px solid #2d4a6a; margin: 40px 0;"></div>
+  
+    <!-- Bottom -->
+    <div style="text-align: center; color: #a0aec0; font-size: 14px;">
+      <p>© 2025 INVIWISE. All rights reserved.</p>
+      <p>Privacy Policy | Terms of Service | Sitemap</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
